@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento via Pix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Pagamento via Pix </h1>
+        <form id="pixform">
+            <label for="amount">Valor (R$):</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+            <button type="submit">Gerar QR Code</button>
+        </form>
+        <div id="qrcodeContainer" class="hidden">
+            <h2>QR Code do Pix</h2>
+            <img id="qrcodeImage" alt="QR Code para pagamento via pix">
+            <p>Escaneie o QR Code com seu app de banco para efetuar o pagamento.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
